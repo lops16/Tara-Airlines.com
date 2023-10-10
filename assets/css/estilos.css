@@ -1,0 +1,3476 @@
+/* General */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+body {
+    background-color: rgb(245, 239, 234);
+    width: auto;
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+    
+    
+    
+}
+.centrado {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style: none; 
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 183, 255);
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.btn_head{
+    background-color:  rgb(0, 183, 255);
+    border: none;
+    color: #006eff;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.btn_head:hover{
+    cursor: pointer;
+
+}
+
+
+/* Navegador */
+.contenedor_nav {
+    width: 100%;
+    background-color: #ffffff;
+    height: 220px;
+    
+    display: flex;
+    align-items: center;
+}
+nav {
+    width: 70%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    
+    
+   
+    
+    
+}
+
+/* Menu */
+    .btn_menu {
+        display: none;
+        background-color: rgb(255, 255, 255);
+        height: auto; 
+        border: none;
+
+    }
+    .btn_menu>i{
+        font-size: 2.5rem;
+    }
+    .menu_nav {
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        
+        
+    }
+
+    ul{
+        width: 100%;
+        /* margin-top: 0; */
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;          
+    }
+    
+
+    .menu>li {
+        font-size: 2rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+    }
+
+    .menu .menu1:hover {
+        border-bottom: 7px solid rgb(11, 152, 247);
+        padding-top: 7px;
+        cursor: pointer;
+    }
+
+    .menu_nav>.menu>.menu1:hover >.contenedor_submenu1 {
+        display: flex;
+        
+    }
+
+    .menu .menu2:hover {
+        border-bottom: 7px solid rgb(11, 152, 247);
+        padding-top: 7px;
+        cursor: pointer;
+    }
+
+    .menu_nav>.menu>.menu2:hover >.contenedor_submenu2 {
+        display: flex;
+        
+    }
+    .menu .menu3:hover {
+        border-bottom: 7px solid rgb(11, 152, 247);
+        padding-top: 7px;
+        cursor: pointer;
+    }
+    .menu_nav>.menu>.menu3:hover >.contenedor_submenu3 {
+        display: flex;
+        
+    }
+    .menu .menu4:hover {
+        border-bottom: 7px solid rgb(11, 152, 247);
+        padding-top: 7px;
+        cursor: pointer;
+    }
+
+    .menu_nav>.menu>.menu4:hover >.contenedor_submenu4 {
+        display: flex;
+        
+    }
+/* Submenus */
+
+    /* Submenu1 */
+            .menu .menu1 {
+                position: relative;
+            }
+
+            .menu1 .contenedor_submenu1 {
+                width: 40rem;
+                height: 200px;
+                border-radius: 5px;
+                position: absolute;
+                z-index: 100;
+                display: none;
+                border: 0.2px solid rgb(233, 228, 228);
+                background-color: white;
+                top: 3.1rem;
+                left: -2rem;
+                box-shadow: 4px 10px 20px -10px rgba(0, 0, 0, 0.1);
+                
+
+            }
+
+            .contenedor_submenu1 .ofertas_vuelo {
+
+                width: 50%;
+                height: auto;
+                
+                text-align: justify;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                
+                
+                
+                
+            }
+            .separador2{
+                width: 100%;
+                border-left: 1px solid rgba(67, 91, 116, 0.774);
+                
+                height: 10rem;
+                position: absolute;
+                left: 20rem;
+                top: 1rem;
+                
+            }
+
+            .contenedor_submenu1 .ofertas_vuelo h4 {
+                width: 80%;
+                font-size: 1.5rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                color: #2376e2;
+                text-align: center;
+                
+
+            }
+
+            .contenedor_submenu1 .ofertas_vuelo p {
+                width: 90%;
+                margin: 0 auto;
+                
+                
+                margin-top: -1rem;
+                font-size: 1rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: #000000;
+                text-align: center;
+                
+                
+
+            }
+
+            .btn_menu_ofertas {
+                background-color: #2376e2;
+                border: none;
+                width: 50%;
+                height: 3rem;
+                position: absolute;
+                top: 8rem;
+                left: 5rem;
+                border-radius: 0.3rem;
+                color:#ffffff
+                
+            }
+
+            .btn_menu_ofertas:hover {
+                box-shadow: 10px 14px 27px -3px rgba(0,0,0,0.1);
+                cursor: pointer;
+            }
+
+            .contenedor_submenu1 .ofertas_vuelo .icono_vuelo {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .contenedor_submenu1 .ofertas_vuelo .icono_vuelo i {
+                position: absolute;
+                top: 2.3rem;
+                left: 2rem;
+            }
+
+            
+
+            .contenedor_submenu1 .tienes_vuelo {
+                width: 50%;
+                height: auto;
+                
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+                
+            } 
+            .contenedor_submenu1>li {
+                font-size: 1.1rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                text-align: left;
+            }
+
+    /* Submenu2 */
+            .menu .menu2 {
+                position: relative;
+            }
+
+            .menu2 .contenedor_submenu2 {
+                width: 40rem;
+                height: 200px;
+                border-radius: 5px;
+                position: absolute;
+                z-index: 100;
+                display: none;
+                border: 0.2px solid rgb(219, 218, 218);
+                background-color: white;
+                top: 3.1rem;
+                left: -12rem;
+                box-shadow: 4px 10px 20px -10px rgba(0, 0, 0, 0.1);
+
+            }
+
+
+            .contenedor_submenu2 .opciones_vuelo {
+                width: 50%;
+                height: auto;
+                
+                display: flex;
+                flex-direction: column;
+                
+                align-items: center;
+                justify-content: space-evenly;
+                
+                
+            } 
+
+            .contenedor_submenu1, .contenedor_submenu2>li {
+                font-size: 1.1rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                text-align: left;
+                
+                
+            }
+
+
+            .contenedor_submenu2>ul>li {
+                font-size: 1.1rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+            }
+
+            .separador{
+                width: 100%;
+                border-left: 1px solid rgba(67, 91, 116, 0.774);
+                
+                height: 10rem;
+                position: absolute;
+                left: 19rem;
+                top: 1rem;
+            }
+
+            .check_in{
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                
+                position: relative;
+            }
+
+
+            
+
+            .contenedor_submenu2 .check_in h4 {
+                
+                font-size: 1.5rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                color: #2376e2;
+                width: 80%;
+                text-align: center;
+
+            }
+
+            .contenedor_submenu2 .check_in p {
+                margin: 0 auto;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                margin-top: -1rem;
+                font-size: 1rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: #000000;
+                
+                
+                text-align: center;
+                width: 80%;
+                
+
+            }
+
+            .btn_check {
+                background-color: #2376e2;
+                border: none;
+                width: 50%;
+                height: 3rem;
+                position: absolute;
+                top: 8rem;
+                left: 5rem;
+                border-radius: 0.3rem;
+                color:#ffffff;
+                font-size: 1rem;
+                
+
+            }
+
+            .btn_check:hover{
+                cursor: pointer;
+            }
+
+/* Submenu3 */
+
+            .menu .menu3 {
+                position: relative;
+            }
+
+            .menu3 .contenedor_submenu3 {
+                width: 40rem;
+                height: 200px;
+                border-radius: 5px;
+                position: absolute;
+                z-index: 100;
+                display: none;
+                border: 0.2px solid rgb(219, 218, 218);
+                background-color: white;
+                top: 3.1rem;
+                left: -22rem;
+                box-shadow: 4px 10px 20px -10px rgba(0, 0, 0, 0.1);
+
+            }
+            .surfer_club{
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                
+                position: relative;
+            }
+
+
+            
+
+            .contenedor_submenu3 .surfer_club h4 {
+                
+                font-size: 1.2rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                color: #2376e2;
+                width: 80%;
+                text-align: center;
+
+            }
+
+            .contenedor_submenu3 .surfer_club p {
+                margin: 0 auto;
+                
+                
+                margin-top: -1rem;
+                font-size: 0.9rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: #000000;
+                width: 90%;
+                
+                
+                
+                text-align: left;
+                width: 77%;
+                
+
+            }
+
+            .btn_club {
+                background-color: #2376e2;
+                border: none;
+                width: 50%;
+                height: 3rem;
+                position: absolute;
+                top: 8rem;
+                left: 5rem;
+                border-radius: 0.3rem;
+                color:#ffffff;
+                font-size: 1rem;
+                
+
+            }
+
+            .btn_club:hover{
+                cursor: pointer;
+            }
+
+            .inspirate{
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                
+                position: relative;
+            }
+
+
+            
+
+            .contenedor_submenu3 .inspirate h4 {
+                
+                font-size: 1.2rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                color: #2376e2;
+                width: 80%;
+                text-align: center;
+
+            }
+
+            .contenedor_submenu3 .inspirate p {
+                margin: 0 auto;
+                
+                
+                margin-top: -1rem;
+                font-size: 0.9rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: #000000;
+                width: 90%;
+                
+                
+                
+                text-align: left;
+                width: 77%;
+                
+
+            }
+
+            .btn_inspira {
+                background-color: #2376e2;
+                border: none;
+                width: 50%;
+                height: 3rem;
+                position: absolute;
+                top: 8rem;
+                left: 5rem;
+                border-radius: 0.3rem;
+                color:#ffffff;
+                font-size: 1rem;
+                
+
+            }
+
+            .btn_inspira:hover{
+                cursor: pointer;
+            }
+
+ /* Submenu4 */
+
+            .menu .menu4 {
+                position: relative;
+            }
+
+            .menu4 .contenedor_submenu4 {
+                width: 40rem;
+                height: 200px;
+                border-radius: 5px;
+                position: absolute;
+                z-index: 100;
+                display: none;
+                border: 0.2px solid rgb(219, 218, 218);
+                background-color: white;
+                top: 3.1rem;
+                left: -34rem;
+                box-shadow: 4px 10px 20px -10px rgba(0, 0, 0, 0.1);
+
+            }
+            .about{
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                
+                position: relative;
+            }
+
+
+            
+
+            .contenedor_submenu4 .about h4 {
+                
+                font-size: 1.2rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                color: #2376e2;
+                width: 80%;
+                text-align: center;
+
+            }
+
+            .contenedor_submenu4 .about p {
+                margin: 0 auto;
+                
+                
+                margin-top: -1rem;
+                font-size: 0.9rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: #000000;
+                width: 90%;
+                
+                
+                
+                text-align: left;
+                width: 77%;
+                
+
+            }
+
+            .btn_about {
+                background-color: #2376e2;
+                border: none;
+                width: 50%;
+                height: 3rem;
+                position: absolute;
+                top: 8rem;
+                left: 5rem;
+                border-radius: 0.3rem;
+                color:#ffffff;
+                font-size: 1rem;
+                
+
+            }
+
+            .btn_about:hover{
+                cursor: pointer;
+            }
+
+            .trabaja{
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                
+                position: relative;
+            }
+
+
+            
+
+            .contenedor_submenu4 .trabaja h4 {
+                
+                font-size: 1.2rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                color: #2376e2;
+                width: 80%;
+                text-align: center;
+
+            }
+
+            .contenedor_submenu4 .trabaja p {
+                margin: 0 auto;
+                
+                
+                margin-top: -1rem;
+                font-size: 0.9rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: #000000;
+                width: 90%;
+                
+                
+                
+                text-align: left;
+                width: 77%;
+                
+
+            }
+
+            .btn_trabajo {
+                background-color: #2376e2;
+                border: none;
+                width: 50%;
+                height: 3rem;
+                position: absolute;
+                top: 8rem;
+                left: 5rem;
+                border-radius: 0.3rem;
+                color:#ffffff;
+                font-size: 1rem;
+                
+
+            }
+
+            .btn_trabajo:hover{
+                cursor: pointer;
+            }
+
+/* Menu movil*/
+            .pantalla_menu {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(115, 136, 156, 0.89);
+                position: fixed;
+                z-index: 200;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                visibility: hidden;
+            }
+
+            .active {
+                visibility: visible;
+            }
+
+            .pantalla_menu_nav {
+                width: 50%;
+                height: 850px;
+                background-color: rgb(255, 255, 255);
+                
+              
+            }
+
+            .cabecera_movil{
+                width: 100%;
+                height: 100px;
+                border-bottom: 1px solid gray;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .btn_cierre_menu{
+                height: 2rem;
+                border: none;
+                background-color: white;
+                padding-right: 1rem;
+                padding-top: 1rem;
+                font-size: 1.5rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 500;
+                color: #afafaf;
+
+        }
+
+        .btn_cierre_menu:hover {
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+            .menu_movil{
+                width: 100%;
+                height: auto;
+                
+                
+            }
+
+            .menu_movil>p{
+                padding-top: 1.5rem;
+                padding-left: 2rem;
+                font-size: 1.2rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+            }
+
+            
+            
+            .menu_movil>p:hover{
+                cursor: pointer;
+                border-left: 6px solid #1e76e9;
+
+            }
+
+            .vuelo_movil{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+                display: none;
+                font-size: 1rem;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 500;
+                
+                
+            }
+            .vuelo_movil li{
+                margin-top: 1rem;
+            }
+
+            .tu_vuelo_movil{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+                display: none;
+                
+            }
+            .tu_vuelo_movil li{
+                margin-top: 1rem;
+            }
+
+            .Descubre_movil{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+                display: none;
+                
+            }
+            .Descubre_movill li{
+                margin-top: 1rem;
+            }
+
+            .Tara_movil{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+                display: none;
+                
+            }
+            .Tara_movil li{
+                margin-top: 1rem;
+            }
+
+            
+
+
+    
+
+    
+
+    
+/* logo */
+
+    .logo {
+        width: 25%;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        display: flex;
+        
+        
+    }
+
+    .logo .home{
+        width: 70%;
+        height: auto;
+        justify-content: center;
+        display: flex;
+       
+    }
+    
+/* Login */
+    
+    .login {
+        width: 25%;
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+       
+        
+        
+        
+        
+    }
+        .login>.btn_registro {
+            background-color: #ffffff;
+            width: 6rem;
+            height: 3rem; 
+            border-radius: 0.3rem;
+            border: 2px solid #2ea9f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:  #2ea9f0;
+            font-size: 1rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+
+        .login>.btn_registro:hover{
+            border: 4px solid  #2ea9f0;
+            cursor: pointer;
+            
+
+        }
+
+        .login>.btn_login {
+            background-color: #ffffff;
+            width: 6rem;
+            height: 3rem; 
+            border-radius: 0.3rem;
+            border: 2px solid #dddcdc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #dddcdc;;
+            font-size: 1rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        
+
+        .login>.btn_login:hover{
+            border: 4px solid #dddcdc;
+            cursor: pointer;
+            
+
+        }
+
+        .icono_login {
+            width: 6rem;
+            height: 3rem;
+            display: none;
+            border: none;
+            background-color: #ffffff;
+            
+        }
+
+        .icono_login>i{
+            
+            font-size: 2.5rem;
+            margin-right: 2rem;
+            color: #3a3a3a;
+        }
+
+/* Caja registro */
+
+        .pantalla_registro {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(164, 189, 207, 0.781);
+            position: fixed;
+            z-index: 200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            
+            
+        }
+
+        .pantalla_registro.active{
+            visibility:visible;
+            }
+
+            
+
+        .menu_registro {
+            width: 24rem;
+            height: 500px;
+            background-color: #ffffff;
+            border-radius: 0.6rem;
+            position: relative;
+            box-shadow: -4px 13px 20px 0px rgba(0,0,0,0.1);
+        }
+
+        #inpt1{
+            width: 70%;
+            height: 3rem;
+            border: 1px solid rgb(209, 209, 209);
+            border-radius: 0.2rem;
+            position: absolute;
+            top: 8rem;
+            left: 3.5rem;
+            padding-left: 40px;
+            padding-left: 40px;
+            
+            
+        }
+
+        #inpt1:focus  {
+            outline: none;
+	        border-color: #0c90e7;
+        }
+
+        #inpt1:focus ~ .ico1{
+            color: #0e8fda;
+            
+        }
+        
+        
+        #inpt2{
+            width: 70%;
+            height: 3rem;
+            border: 1px solid rgb(209, 209, 209);
+            border-radius: 0.2rem;
+            position: absolute;
+            top: 12rem;
+            left: 3.5rem;
+            padding-left: 40px;
+            
+        }
+
+        #inpt2:focus  {
+            outline: none;
+	        border-color: #0c90e7;
+        }
+
+        #inpt2:focus ~ .ico2{
+            color: #0e8fda;
+            
+        }
+
+        
+
+        #btn_reg{
+            border: none;
+            background-color: #1573ff;
+            width: 70%;
+            height: 3rem;
+            border-radius: 0.2rem;
+            color: #ffffff;
+            position: absolute;
+            top: 16rem;
+            left: 3.5rem;
+            font-size: 1.2rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 500;
+
+        }
+        #btn_reg:hover {
+            box-shadow: 0px 16px 30px -3px rgba(0,0,0,0.1);
+            cursor: pointer;
+
+        }
+
+        #btn_reg:disabled {
+            background-color: #8eb3eb;
+        }
+
+        .btn_cierre {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            border: none;
+            background-color: #ffffff;
+            font-size: 1.5rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 500;
+            color: #afafaf;
+
+        }
+
+        .btn_cierre:hover {
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .texto_cuenta {
+            position: absolute;
+            top: 24rem;
+            left: 5rem;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+
+        .enlace_login{
+            font-weight: 400;
+            color: #2ea9f0;
+            background-color: #ffffff;
+            border: none;
+
+        }
+
+        .enlace_login:hover {
+            color: #0e8fda;
+            font-weight: 600;
+            cursor: pointer;
+            
+            
+
+        }
+
+        .titulo_registro {
+            position: absolute;
+            top: 3rem;
+            left: 7rem;
+            font-size: 1.5rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        .btn_ojo {
+            position: absolute;
+            top: 12.8rem;
+            left: 17.5rem;
+            background-color: #ffffff00;
+            border: none;
+            color: #44474b;
+            font-size: 1.2rem;
+            z-index: 100;
+        }
+
+        #inpt5{
+            position: absolute;
+    
+            top: 20.2rem;
+            left: 4.5rem;
+    
+        }
+    
+        label {
+            width: 60%;
+            position: absolute;
+    
+            top: 20rem;
+            left: 6rem;
+    
+        }
+
+/* Menu login */
+    .pantalla_log{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(164, 189, 207, 0.781);
+        position: fixed;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+
+    }
+
+    .pantalla_log.active{
+        visibility: visible;
+
+    }
+
+    .menu_log {
+        width: 24rem;
+        height: 500px;
+        background-color: #ffffff;
+        border-radius: 0.6rem;
+        position: relative;
+        box-shadow: -4px 13px 20px 0px rgba(0,0,0,0.1);
+    }
+    #inpt3{
+        width: 70%;
+        height: 3rem;
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 0.2rem;
+        position: absolute;
+        top: 8rem;
+        left: 3.5rem;
+        padding-left: 40px;
+        
+        
+    }
+    #inpt3:focus  {
+        outline: none;
+        border-color: #0c90e7;
+    }
+
+    #inpt3:focus ~ .ico1{
+        color: #0e8fda;
+        
+    }
+
+    .icono_mail {
+        position: relative;
+    }
+
+    .icono_mail i {
+        position: absolute;
+        top: 8.9rem;
+        left: 4.1rem;
+        z-index: 100;
+        color: #44474b;
+        font-size: 1.2rem;
+    }
+
+    
+    #inpt4{
+        width: 70%;
+        height: 3rem;
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 0.2rem;
+        position: absolute;
+        top: 12rem;
+        left: 3.5rem;
+        padding-left: 40px;
+        
+    }
+
+    #inpt4:focus  {
+        outline: none;
+        border-color: #0c90e7;
+    }
+
+    #inpt4:focus ~ .ico2{
+        color: #0e8fda;
+        
+    }
+
+
+    .icono_llave {
+        position: relative;
+    }
+
+    .icono_llave>i {
+        position: absolute;
+        top: 13rem;
+        left: 4.1rem;
+        z-index: 200;
+        color: #44474b;
+        font-size: 1rem;
+    }
+
+
+    
+
+    #btn_log{
+        border: none;
+        background-color: #1573ff;
+        width: 70%;
+        height: 3rem;
+        border-radius: 0.2rem;
+        color: #ffffff;
+        position: absolute;
+        top: 16rem;
+        left: 3.5rem;
+        font-size: 1.2rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+
+    }
+    #btn_log:hover {
+        box-shadow: 0px 16px 30px -3px rgba(0,0,0,0.1);
+        cursor: pointer;
+
+    }
+
+    
+    .titulo_log {
+        position: absolute;
+        top: 3rem;
+        left: 6rem;
+        font-size: 1.5rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+    }
+    
+    .texto_registro {
+        position: absolute;
+        top: 20rem;
+        left: 5rem;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+    }
+
+    .enlace_registro {
+
+        position: absolute;
+        top: 23rem;
+        left: 6.9rem;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(21, 112, 231);
+        width: 40%;
+        height: 2.5rem;
+        border-radius: 0.2rem;
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        color: #1573ff;
+
+    }
+
+    .enlace_registro:hover {
+        border: 3px solid rgb(21, 112, 231);
+        font-weight: 700;
+        cursor: pointer;
+
+    }
+
+    
+
+
+/* Main */
+
+main {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(171, 231, 241);
+    position: relative;
+    background-image: url("/imagenes/Main_autralia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+main .btn1 {
+    width: 11rem;
+    height: 4rem;
+    background-color: rgb(31, 141, 231);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 350px;
+    left: 20%;
+    box-shadow: -4px 13px 20px 0px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: white;
+    border: none;
+}
+
+.btn1:hover{
+    cursor: pointer;
+}
+
+
+
+
+main h2 {
+    
+        font-size: 3rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color: white;
+        position: absolute;
+        top: 80px;
+        left: 17%;
+}
+/* Ofertas */
+
+.oferta_viajes {
+    width: 70%;
+    height: 500px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+    
+
+}
+    .oferta_viajes> .oferta1, .oferta2, .oferta3, .oferta4 {
+        width: 17rem;
+        height: 17rem;
+        
+       
+        border-radius: 1rem;
+        box-shadow: -4px 13px 20px 0px rgba(0,0,0,0.1);
+        
+        
+
+    }
+
+
+    .btn_ofertas {
+        display: none;
+        border: 3px solid rgb(5, 137, 245);
+        border-radius: 0.7rem;
+    }
+
+    .ofertas_titulo {
+        width: 70%;
+        height: 100px;
+        text-align: start;
+        font-size: 2.6rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        padding-top: 1rem;
+        margin-top: 3rem;
+        
+       
+}
+
+    
+
+/* Oferta 1 */
+         .oferta1 {
+            background-image: url("/imagenes/paisaje/Bells-Beach-Visions.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            
+               
+        }
+
+        .oferta1 .info1 {
+            width: 17rem;
+            height: 6rem;
+            background-color: #c2dbe2c0;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info1 .Destino_oferta{
+            color: #1573ff;
+            width: 80%;
+            font-size: 1.6rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            
+           
+        }
+        .info1 .Precio_oferta{
+           
+            width: 60%;
+            text-align: end;
+            font-size: 1.2rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            
+            
+        } 
+
+        .Precio_oferta span {
+            color:  #2558b8;
+            font-size: 1.4rem;
+        }
+        
+/* Oferta 2 */
+         .oferta2 {
+            background-image: url("/imagenes/paisaje/ohau-beach-hawaii.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            
+               
+        }
+
+        .oferta2 .info2 {
+            width: 17rem;
+            height: 6rem;
+            background-color: #c2dbe2c0;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info2 .Destino_oferta{
+            color: #1573ff;
+            width: 80%;
+            font-size: 1.6rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            
+           
+        }
+        .info2 .Precio_oferta{
+           
+            width: 60%;
+            text-align: end;
+            font-size: 1.2rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            
+            
+        } 
+
+        .Precio_oferta span {
+            color:  #2558b8;
+            font-size: 1.4rem;
+        }
+
+/* Oferta 3 */
+
+        .oferta3 {
+            background-image: url("/imagenes/paisaje/hanauma_bay_oahu.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            position: relative;
+            display: flex;
+            align-items: flex-start;     
+        }
+
+        .info3 {
+            width: 17rem;
+            height: 6rem;
+            background-color: #c2dbe2c0;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info3 .Destino_oferta{
+            color: #1573ff;
+            width: 80%;
+            font-size: 1.6rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+            
+           
+        }
+        .info3 .Precio_oferta{
+           
+            width: 60%;
+            text-align: end;
+            font-size: 1.2rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+            
+        } 
+
+        .Precio_oferta span {
+            color:  #2558b8;
+            font-size: 1.4rem;
+        }
+
+/* Oferta 4 */
+
+        .oferta4 {
+            background-image: url("/imagenes/paisaje/NZ-Best-Beaches-Chums-Bay.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            
+               
+        }
+
+        .oferta4 .info4 {
+            width: 17rem;
+            height: 6rem;
+            background-color: #c2dbe2c0;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info4 .Destino_oferta{
+            color: #1573ff;
+            width: 80%;
+            font-size: 1.6rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            
+           
+        }
+        .info4 .Precio_oferta{
+           
+            width: 60%;
+            text-align: end;
+            font-size: 1.2rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            
+            
+        } 
+
+        .Precio_oferta span {
+            color:  #2558b8;
+            font-size: 1.4rem;
+        }
+
+        /* pagina ofertas */
+
+        .otras_ofertas{
+            width: 70%;
+            height: 700px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+           
+        }
+
+        .otras_ofertas_titulo {
+            border-top: 1px solid black;
+            width: 70%;
+            text-align: start;
+            font-size: 2.6rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+           
+            
+    }
+
+    
+    .mini_oferta1, .mini_oferta2, .mini_oferta3, .mini_oferta4,.mini_oferta5, .mini_oferta6, .mini_oferta7, .mini_oferta8, .mini_oferta9, .mini_oferta10, .mini_oferta11, .mini_oferta12   {
+        width: 17rem;
+        height: 10rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 3px 0px 33px 0px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    .separador_oferta{
+        width: 60%;
+        border-top: 0.3px solid rgb(187, 187, 187);
+        margin-top: -1rem;
+    }
+
+    .otras_ofertas>div>h4{
+        font-size: 1.5rem;
+        font-family: 'nunito', sans-serif;
+        font-weight: 700;
+    }
+
+    .otras_ofertas>div>p{
+        font-size: 1rem;
+        font-family: 'montserrat', sans-serif;
+        font-weight: 400;
+    }
+
+    .otras_ofertas>div:hover{
+        cursor: pointer;
+        
+        
+    }
+
+   
+
+
+    
+
+    
+
+   
+
+
+
+
+    
+
+/* Miembros */
+
+.miembros {
+    width: 70%;
+    height: 750px;
+    border-top: 1px solid rgb(172, 170, 170);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.miembros h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    
+    color: #1e76e9;
+    margin-left: 0;
+}
+
+.miembros div {
+    width: 24rem;
+    height: 32rem;
+    background-color: coral;
+    background: linear-gradient(0deg, rgb(17, 122, 221) 0%, rgb(0, 242, 255) 100%);
+    border-radius: 2rem;
+    box-shadow: -4px 13px 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    
+    
+}
+
+.membresia1 .forma{
+    width: 24rem;
+    height: 32rem;
+    background-color: white;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%,rgb(255, 255, 255));
+    border-radius: 0% 0% 96% 4% / 9% 0% 100% 0%;
+    box-shadow: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+    
+   
+    
+}
+
+.membresia2 .forma{
+    width: 24rem;
+    height: 32rem;
+    background-color: white;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%,rgb(255, 255, 255));
+    border-radius: 0% 0% 96% 4% / 9% 0% 100% 0%;
+    box-shadow: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+    
+   
+    
+}
+
+.forma h3{
+    padding-top: 4rem;
+    width: 80%;
+    color: #1e76e9;
+    font-size: 2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+}
+
+ .btn_surfer{
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(18, 134, 243);
+    position: absolute;
+    top: 22rem;
+    left: 2rem;
+    font-size: 1.2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.membresia2 .btn_surfer{
+    
+    top: 24rem;
+   
+}
+
+.btn_surfer:hover{
+    cursor: pointer;
+    box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.forma ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.forma li{
+    margin-top: 1rem;
+    padding-left: 2.2rem;
+    font-size: 0.9rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.forma span{
+    font-size: 0.8rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    color: #5f5f5f;
+}
+
+
+
+/* Inspiracion */
+
+.inspiracion{
+    width: 100%;
+    
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+}
+.inspiracion div{
+    width: 20%;
+    height: 400px;
+    background-color: #0ed3da;
+}
+.inspiracion h3{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    
+    color: #0e8fda;
+    
+}
+
+.inspiracion h4{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: -1rem;
+    
+    
+}
+ /* Insp1 */
+.insp1{
+    background-image: url("/imagenes/paisaje/Ninety-Mile-Beach_cs.jpg");
+    background-size: cover;
+    background-position:  center;
+}
+
+.insp1 .filtro{
+    width: 100%;
+    height: 400px;
+    background-color: #0fbce754;
+    background: linear-gradient(0deg, rgba(17,123,221,0.4990371148459384) 0%, rgba(0,241,255,0.5326505602240896) 100%);
+    font-size: 1.2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+.insp1 .filtro.active{
+    visibility: visible;
+}
+
+
+.insp1 .filtro p{
+    width: 80%;
+    text-align: center; 
+    margin: 0 auto;
+    padding-top: 8rem;
+    margin-bottom: -6rem;
+    
+}
+
+
+.btn_insp1{
+    width: 11rem;
+    height: 4rem;
+    background-color: rgb(243, 138, 18);
+    border: none;
+    border-radius: 0.5rem;
+    
+    font-size: 1rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    
+    
+
+}
+
+.btn_insp1:hover{
+    cursor: pointer;
+    box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+}
+    /* Insp2 */
+.insp2{
+    background-image: url("/imagenes/paisaje/7-sitios-surf.jpg");
+    background-size: cover;
+    background-position:  center;
+    position: relative;
+    border-left: 3px solid rgb(245, 239, 234);
+    
+    
+
+}
+
+.insp2 .filtro{
+    width: 100%;
+    height: 400px;
+    background-color: #0fbce754;
+    background: linear-gradient(0deg, rgba(17,123,221,0.4990371148459384) 0%, rgba(0,241,255,0.5326505602240896) 100%);
+    font-size: 1.2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+.insp2 .filtro.active{
+    visibility: visible;
+}
+
+.insp2 .filtro p{
+    width: 80%;
+    text-align: center; 
+    margin: 0 auto;
+    padding-top: 8rem;
+    margin-bottom: -6rem;
+}
+
+.btn_insp2{
+    width: 11rem;
+    height: 4rem;
+    background-color: rgb(243, 138, 18);
+    border: none;
+    border-radius: 0.5rem;
+    
+    font-size: 1rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    
+
+}
+
+.btn_insp2:hover{
+    cursor: pointer;
+    box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+/* Insp3 */
+.insp3{
+    background-image: url("/imagenes/paisaje/AUSTRALIA-MEJORES-STIOS-SURF.jpg");
+    background-size: cover;
+    background-position:  center;
+    position: relative;
+    border-left: 3px solid rgb(245, 239, 234);
+    
+    
+
+}
+
+.insp3 .filtro{
+    width: 100%;
+    height: 400px;
+    background-color: #0fbce754;
+    background: linear-gradient(0deg, rgba(17,123,221,0.4990371148459384) 0%, rgba(0,241,255,0.5326505602240896) 100%);
+    font-size: 1.2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+.insp3 .filtro.active{
+    visibility: visible;
+}
+
+.insp3 .filtro p{
+    width: 80%;
+    text-align: center; 
+    margin: 0 auto;
+    padding-top: 8rem;
+    margin-bottom: -6rem;
+}
+
+.btn_insp3{
+    width: 11rem;
+    height: 4rem;
+    background-color: rgb(243, 138, 18);
+    border: none;
+    border-radius: 0.5rem;
+    
+    font-size: 1rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    
+
+}
+
+.btn_insp3:hover{
+    cursor: pointer;
+    box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+
+
+}/* Insp4 */
+.insp4{
+    background-image: url("/imagenes/paisaje/BYRON-BAY.jpg");
+    background-size: cover;
+    background-position:  center;
+    position: relative;
+    border-left: 3px solid rgb(245, 239, 234);
+    
+    
+
+}
+
+.insp4 .filtro{
+    width: 100%;
+    height: 400px;
+    background-color: #0fbce754;
+    background: linear-gradient(0deg, rgba(17,123,221,0.4990371148459384) 0%, rgba(0,241,255,0.5326505602240896) 100%);
+    font-size: 1.2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+
+   
+    
+
+    
+    
+
+}
+
+.insp4 .filtro.active{
+    visibility: visible;
+}
+
+.insp4 .filtro p{
+    width: 80%;
+    text-align: center; 
+    margin: 0 auto;
+    padding-top: 8rem;
+    margin-bottom: -6rem;
+    
+    
+}
+
+.btn_insp4{
+    width: 11rem;
+    height: 4rem;
+    background-color: rgb(243, 138, 18);
+    border: none;
+    border-radius: 0.5rem;
+    
+    font-size: 1rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    
+
+}
+
+.btn_insp4:hover{
+    cursor: pointer;
+    box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+/* Insp5 */
+.insp5{
+    background-image: url("/imagenes/paisaje/TABLAS-SURF.jpg");
+    background-size: cover;
+    background-position:  center;
+    position: relative;
+    border-left: 3px solid rgb(245, 239, 234);
+    
+    
+
+}
+
+.insp5 .filtro{
+    width: 100%;
+    height: 400px;
+    background-color: #0fbce754;
+    background: linear-gradient(0deg, rgba(17,123,221,0.4990371148459384) 0%, rgba(0,241,255,0.5326505602240896) 100%);
+    font-size: 1.2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+.insp5 .filtro.active{
+    visibility: visible;
+}
+
+.insp5 .filtro p{
+    width: 80%;
+    text-align: center; 
+    margin: 0 auto;
+    padding-top: 8rem;
+    margin-bottom: -6rem;
+    
+}
+
+
+.btn_insp5{
+    width: 11rem;
+    height: 4rem;
+    background-color: rgb(243, 138, 18);
+    border: none;
+    border-radius: 0.5rem;
+    
+    font-size: 1rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    
+
+}
+
+.btn_insp5:hover{
+    cursor: pointer;
+    box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+.hueco{
+    height: 100px;
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid rgb(14, 165, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.redes{
+    width: 30%;
+    height: 100px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.redes div{
+    width: 3.5rem;
+    height: 3.5em;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0e8fda;
+}
+
+.redes div i{
+    font-size: 1.3rem;
+    color: #0e8fda;
+}
+
+.redes div:hover{
+    cursor: pointer;
+    border: 3px solid #0e8fda;
+    
+}
+
+.contacto{
+    width: 30%;
+    
+    height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto_numero{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.contacto_mail{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+}
+.contacto i{
+    font-size: 1.2rem;
+    padding-right: 0.6rem;
+    color: #0e8fda;
+}
+
+
+.app{
+    width: 30%;
+    
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+   
+    
+}
+.app h4{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+
+
+
+.app_store i{
+    font-size: 3rem;
+    color: #0e8fda;
+    
+    
+    
+    
+  
+    
+}
+
+.play_store {
+    font-size: 2.6rem;
+    color: #0e8fda;
+    padding-left: 2rem;
+    
+   
+}
+
+
+
+.politica-cookies {
+    height: 700px;
+    width: 70%;
+}
+
+/* Oferta destacada 1 */
+
+
+
+.fechas_bells{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fechas{
+    width: 70%;
+    height: 120px;
+    
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    
+    align-items: center;
+
+}
+
+.caja_info_vuelo{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.destino_vuelo{
+    width: 100%;
+    height: 120px;
+    margin-left: 4rem;
+    padding-top: 1rem;
+    
+}
+
+
+
+.precio_total{
+    width: 30%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn_reserva{
+width: 9rem;
+height: 3rem;
+border-radius: 0.2rem;
+border: none;
+background-color: rgb(18, 134, 243);
+font-size: 1.2rem;
+font-family: 'nunito', sans-serif;
+font-weight: 500;
+color: white;
+margin-left: 1rem;
+}
+
+
+.btn_reserva:hover{
+cursor: pointer;
+box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.btn_precio{
+    width: 9rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+    border: solid 1px rgb(185, 185, 185);
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 500;
+    color: rgb(185, 185, 185);
+    margin-left: 2rem;
+    }
+    
+    
+    .btn_precio:hover{
+    cursor: pointer;
+    border: solid 2px rgb(185, 185, 185);
+    }
+
+.info_bells{
+    width: 70%;
+    height: auto;
+    
+    
+   
+    
+}
+
+.titulo_info{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
+
+.fondo_1{
+    width: 100%;
+    height: 600px;
+    background-color: #0ed3da;
+    background-image: url("/imagenes/Playas/Bells-beach/bells.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo_1>h2{
+    width: 70%;
+    font-size: 4rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 3px 2px 5px rgba(0,0,0,0.38);
+    
+}
+
+.img_1{
+    background-color: #00c3ff;
+    width: 60%;
+    height: 400px;
+    background-image: url("/imagenes/Playas/Bells-beach/bells3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin-top: 1rem;
+}
+
+.txt_1{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.columnas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    
+}
+
+.colm1{
+    width: 25%;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.1);
+}
+
+.img_colm1{
+    width: 100%;
+    height: 200px;
+    background-image: url("/imagenes/Playas/Bells-beach/Visit-Victoria.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img_colm2{
+    width: 100%;
+    height: 200px;
+    background-image: url("/imagenes/Playas/Bells-beach/Melbourn.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img_colm3{
+    width: 100%;
+    height: 200px;
+    background-image: url("/imagenes/Playas/Bells-beach/arte-entre-paredes_6822025a_1253x837.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.txt_colm{
+    width: 100%;
+    height: 200px;
+    
+}
+
+.txt_colm>h4{
+    font-size: 1.7rem;
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    margin: 0.8rem;
+
+}
+
+.txt_colm>p{
+    font-size: 0.8rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0.8rem;
+
+}
+
+.seccion{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+.sep{
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1300px) {
+    .menu>li {
+        font-size: 1.3rem;}
+    
+     
+
+     .oferta_viajes> .oferta1, .oferta2, .oferta3, .oferta4 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    
+
+
+    
+
+    .miembros div {
+        width: 22rem;
+        height: 26rem;
+    }
+
+    .membresia1 .forma{
+        width: 22rem;
+        height: 26rem;
+    }
+
+    .membresia2 .forma{
+        width: 22rem;
+        height: 26rem;
+    }
+
+    .forma h3{
+        padding-top: 2rem;
+        width: 80%;
+        font-size: 1.9rem;
+        font-family: 'nunito', sans-serif;
+        font-weight: 700;
+    }
+    
+     .btn_surfer{
+        width: 7rem;
+        height: 2rem;
+        border-radius: 0.3rem;
+        position: absolute;
+        top: 17rem;
+        left: 1.9rem;
+        font-size: 1rem;
+        
+    }
+    
+    .membresia2 .btn_surfer{
+        
+        top: 20rem;
+       
+    }
+    
+   
+    
+    
+    .forma li{
+        margin-top: 0.8rem;
+        padding-left: 1.6rem;
+        font-size: 0.9rem;
+        font-family: 'montserrat', sans-serif;
+        font-weight: 400;
+    }
+    
+    .forma span{
+        font-size: 0.7rem;
+        font-family: 'montserrat', sans-serif;
+        font-weight: 400;
+        color: #5f5f5f;
+    }
+
+    .logo {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .logo .home{
+        width: 90%;
+    }
+    
+
+    .menu1 .contenedor_submenu1 {
+        top: 2.4rem;
+        left: -7rem;
+    }
+
+    .menu2 .contenedor_submenu2 {
+        top: 2.4rem;
+    }
+
+    .menu3 .contenedor_submenu3 {
+        top: 2.4rem;
+        left: -20rem;
+    }
+
+    .menu4 .contenedor_submenu4 {
+        top: 2.4rem;
+        left: -28rem;
+    }
+
+    .login>.btn_registro {
+       
+        width: 5rem;
+        height: 2.8rem; 
+        border-radius: 0.3rem;
+        border: 2px solid #2ea9f0;
+       
+        font-size: 0.8rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+    }
+
+    .login>.btn_login {
+       
+        width: 5rem;
+        height: 2.8rem; 
+        border-radius: 0.3rem;
+        
+       
+        font-size: 0.8rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+    }
+
+    footer{
+        height: 300px;
+        flex-direction: column;
+    }
+    .contacto{
+        width: 80%;
+        
+    }
+    .redes{
+        width: 80%;
+    }
+    .app{
+        width: 80%;
+    }
+
+    .app_store i{
+        
+        top: 3rem;
+        left: 29rem;
+      
+        
+    }
+    
+    .play_store {
+        
+        top: 2.9rem;
+        left: 33rem;
+       
+    }
+
+
+    .otras_ofertas{
+        width: 50%;
+        height: 900px;
+        
+       
+    }
+
+    .mini_oferta9, .mini_oferta10, .mini_oferta11, .mini_oferta12{
+        display: none;
+    }
+
+    .txt_1{
+        height: 450px;
+    }
+
+   
+    
+    
+    
+    
+
+ }
+
+ 
+
+@media only screen and (max-width: 1050px) {
+
+    
+
+    nav {
+        width: 100%;
+        height: 150px;
+    }
+
+    .btn_menu{
+        display: flex;
+        width: 10%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+
+        
+        
+    }
+
+    .login>.btn_registro {
+       
+        width: 6rem;
+        height: 2.8rem; 
+        border-radius: 0.3rem;
+        border: 2px solid #2ea9f0;
+       
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+    }
+
+    .login>.btn_login {
+       
+        width: 6rem;
+        height: 2.8rem; 
+        border-radius: 0.3rem;
+        
+       
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+    }
+
+    .btn_menu>img {
+        width: 2.5rem;
+        height: 20px;
+
+    }
+    .menu_nav {
+        display: none;
+    }
+    .logo {
+        width: 50%;
+        display: flex;
+            justify-content: flex-start;
+            align-items: center;
+    }
+    .home>img {
+        width: 14rem;
+        height: 190px;
+    }
+    .login {
+        width: 40%;
+    }
+    .oferta_viajes {
+        position: relative;
+    }
+    .oferta_viajes> .oferta1, .oferta2 {
+        width: 14rem;
+        height: 14rem;
+        
+    }
+
+    .oferta_viajes> .oferta3, .oferta4 {
+        display: none;
+    }
+
+    .oferta_viajes> .btn_ofertas {
+        display: flex;
+        width: 20rem;
+        height: 5rem;
+        position: absolute;
+        bottom: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .oferta_viajes> .btn_ofertas> a {
+        font-size: 1.5rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        color: rgb(5, 137, 245);
+    }
+
+    .miembros div {
+        width: 16rem;
+        height: 20rem;
+    }
+
+    
+
+    .membresia1 .forma{
+        width: 16rem;
+        height: 20rem;
+    }
+
+    .membresia2 .forma{
+        width: 16rem;
+        height: 20rem;
+    }
+
+    .forma h3{
+        padding-top: 1rem;
+        width: 80%;
+        font-size: 1.6rem;
+        font-family: 'nunito', sans-serif;
+        font-weight: 700;
+    }
+    
+     .btn_surfer{
+        width: 7rem;
+        height: 2rem;
+        border-radius: 0.3rem;
+        position: absolute;
+        top: 12rem;
+        left: 1.5rem;
+        font-size: 1rem;
+        
+    }
+    
+    .membresia2 .btn_surfer{
+        
+        top: 13rem;
+       
+    }
+    
+    
+    
+    
+    
+    .forma li{
+        margin-top: 0.3rem;
+        padding-left: 1.6rem;
+        font-size: 0.6rem;
+        font-family: 'montserrat', sans-serif;
+        font-weight: 400;
+    }
+    
+    .forma span{
+        font-size: 0.5rem;
+        font-family: 'montserrat', sans-serif;
+        font-weight: 400;
+        color: #5f5f5f;
+    }
+
+    .btn_insp1, .btn_insp2, .btn_insp3, .btn_insp4, .btn_insp5{
+        width: 9rem;
+        height: 3rem;
+        font-size: 0.8rem;
+        
+        
+        
+    
+    }
+
+   
+    .otras_ofertas{
+        width: 70%;
+        height: 1000px;
+        
+       
+    }
+
+    .txt_1{
+        height: 500px;
+    }
+
+    .txt_colm{
+        height: auto
+    }
+
+    .colm1{
+        height: 500px;
+    }
+
+    .fondo_1{
+        width: 100%;
+        height: 500px;
+        
+    }
+    
+    .fondo_1>h2{
+        width: 70%;
+        font-size: 3rem;
+        
+        
+    }
+    
+    
+    
+   
+    
+    .img_colm1{
+        width: 100%;
+        height: 180px;
+        
+    }
+    
+    .img_colm2{
+        width: 100%;
+        height: 180px;
+    }
+       
+    
+    .img_colm3{
+        width: 100%;
+        height: 180px;
+       
+    }
+    
+    .txt_colm{
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .txt_colm>h4{
+        font-size: 1.4rem;
+       
+    
+    }
+
+    .fechas_bells{
+        width: 80%;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .fechas{
+        width: 70%;
+        height: 220px;
+        
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    
+    }
+    
+    .caja_info_vuelo{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .destino_vuelo{
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        
+        
+    }
+    
+    
+    
+    .precio_total{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    
+    
+
+
+    
+}
+
+     
+
+ @media only screen and (max-width: 720px) {
+
+        nav {
+            width: 100%;
+            height: 150px;
+        }
+
+        .login>.btn_registro{
+            display: none;
+        }
+
+        .login>.btn_login {
+            display: none;
+        }
+
+        .btn_menu{
+            display: flex;
+            width: 10%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+
+        .btn_menu>img {
+            width: 3rem;
+            height: 40px;
+
+        }
+
+        .logo {
+            width: 60%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+        }
+        .home{
+            display: none;
+        }
+        .home>img {
+            width: 15rem;
+            height: 190px;
+        }
+        .login{
+            width: 30%;
+            height: auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            
+        }
+        .icono_login {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+           
+            
+            
+            
+        }
+ 
+        .icono_login>img {
+
+            width: 3rem;
+            height: 40px;
+            
+        }
+
+        .oferta_viajes {
+            width: 75%;
+            height: 900px;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+        }
+
+            .oferta_viajes h3 {
+                
+                left: 18%;
+            }
+            .oferta_viajes> .oferta1, .oferta2 {
+                margin-top: 2rem;
+                width: 17rem;
+                height: 17rem;
+                
+            }
+            .oferta_viajes> .btn_ofertas {
+                
+                width: 18rem;
+                bottom: 50px;
+            }
+
+        .miembros {
+            width: 75%;
+            height: 900px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            }
+
+            .miembros> .membresia1, .membresia2 {
+                margin-bottom: 2rem;
+            }
+            
+            .miembros h2{
+        
+                top: 1rem;
+                left: 1rem;
+                
+            }
+
+
+        .insp4, .insp5{
+            display: none;
+        }
+
+        .inspiracion{
+            height: 900px;
+        }
+        .inspiracion div{
+            width: 100%;
+            height: 250px;
+            background-color: #0ed3da;
+            border-top: 2px solid white;
+        }
+        .insp1 .filtro{
+            height: 250px;
+        }
+
+        .insp1 .filtro p{
+            width: 80%;
+            text-align: center; 
+            margin: 0 auto;
+            padding-top: 3rem;
+            margin-bottom: -2rem;
+            
+        }
+        
+        
+        
+
+        .insp2 .filtro{
+            height: 250px;
+        }
+
+        .insp2 .filtro p{
+            width: 80%;
+            text-align: center; 
+            margin: 0 auto;
+            padding-top: 4rem;
+            margin-bottom: -2rem;
+            
+        }
+
+        .insp3 .filtro{
+            height: 250px;
+        }
+
+        .insp3 .filtro p{
+            width: 80%;
+            text-align: center; 
+            margin: 0 auto;
+            padding-top: 4rem;
+            margin-bottom: -2rem;
+            
+        }
+
+       
+        .otras_ofertas{
+            width: 40%;
+            height: 1800px;
+            
+           
+        }
+
+        .fondo_1{
+            width: 100%;
+            height: 350px;
+        }
+           
+        
+        .fondo_1>h2{
+            width: 70%;
+            font-size: 3rem;
+            
+            
+        }
+        
+        .img_1{
+            background-color: #00c3ff;
+            width: 100%;
+            height: 300px;
+           
+        }
+        
+        .txt_1{
+            width: 100%;
+            height: 400px;
+            
+           
+            margin-top: 1rem;
+            
+        }
+        
+        .columnas{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            
+        }
+        
+        .colm1{
+            width: 80%;
+            height: auto;
+            background-color: #ffffff;
+            box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        
+        .img_colm1{
+            width: 100%;
+            height: 200px;
+            
+        }
+        
+        .img_colm2{
+            width: 100%;
+            height: 200px;
+            
+        }
+        
+        .img_colm3{
+            width: 100%;
+            height: 200px;
+            
+        }
+        
+        .txt_colm{
+            width: 100%;
+            height: auto;
+            
+        }
+        
+        .txt_colm>h4{
+            font-size: 1.3rem;
+            
+        
+        }
+        
+        .txt_colm>p{
+            font-size: 0.8rem;
+           
+        }
+        
+        .seccion{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+        
+        
+            
+
+
+     }
+
+ @media only screen and (max-width: 390px) {
+
+        .oferta_viajes {
+            width: 100%;
+            height: 1000px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .oferta_viajes h3 {
+            font-size: 2rem;
+            top: 60px;
+            left: 18%;
+        }
+
+        .oferta1 .info1 {
+            width: 19rem;
+        }
+        .oferta2 .info2 {
+            width: 19rem;
+        }
+        .oferta_viajes> .oferta1, .oferta2 {
+            margin-top: 2rem;
+            width: 19rem;
+            height: 19rem;
+            
+        }
+
+        .oferta_viajes> .btn_ofertas {
+                
+            width: 15rem;
+            height: 4rem;
+            border-radius: 00.5rem;
+            bottom: 50px;
+        }
+
+        .miembros {
+            width: 100%;
+            height: 900px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            }
+
+         .miembros> div {
+                width: 22rem;
+            }
+
+            .fondo_1{
+            width: 100%;
+            height: 200px;
+        }
+           
+        
+        .fondo_1>h2{
+            width: 70%;
+            font-size: 1.6rem;
+            
+            
+        }
+
+        
+        
+        .img_1{
+            background-color: #00c3ff;
+            width: 100%;
+            height: 200px;
+           
+        }
+        
+        .txt_1{
+            width: 100%;
+            height: auto;
+            
+           
+            margin-top: 1rem;
+            
+        }
+        
+        .columnas{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            
+        }
+        
+        .colm1{
+            width: 80%;
+            height: auto;
+            background-color: #ffffff;
+            box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        
+        .img_colm1{
+            width: 100%;
+            height: 200px;
+            
+        }
+        
+        .img_colm2{
+            width: 100%;
+            height: 200px;
+            
+        }
+        
+        .img_colm3{
+            width: 100%;
+            height: 200px;
+            
+        }
+        
+        .txt_colm{
+            width: 100%;
+            height: auto;
+            
+        }
+        
+        .txt_colm>h4{
+            font-size: 1.3rem;
+            
+        
+        }
+        
+        .txt_colm>p{
+            font-size: 0.8rem;
+           
+        }
+        
+        .seccion{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+        
+        
+            
+
+
+     
+
+     }
+
